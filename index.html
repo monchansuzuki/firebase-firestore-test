@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="container">
+    <h1>List of Cafe</h1>
+    <ul id="list-cafe">
+    </ul>
+
+    </div>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD6HjVH159DBvtsga-j_TY1Y9SIjy_tPtg",
+        authDomain: "test-7f515.firebaseapp.com",
+        databaseURL: "https://test-7f515.firebaseio.com",
+        projectId: "test-7f515",
+        storageBucket: "test-7f515.appspot.com",
+        messagingSenderId: "582566575702"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore()
+    db.settings({timestampsInSnapshots : true})
+</script>
+<script src="app.js">
+
+</script>
+</body>
+</html>
